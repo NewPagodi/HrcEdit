@@ -368,6 +368,8 @@ wxString bone::ToString()
 //impliment hrceditFrame class
 hrceditFrame::hrceditFrame(wxFrame *frame): GUIFrame(frame),PropertyHeader(NULL)
 {
+    SetStatusText("Version 0.0.1",0);
+
     if( !wxFileName::FileExists("profiles.db") )
     {
         //We should probably do something more severe here.
